@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/button_color"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ImageView
+            android:id="@+id/myPhoto_imageView"
+            android:layout_width="419dp"
+            android:layout_height="455dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile_photo"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/name_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="left"
+            android:padding="16dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="@string/my_name"
+            app:layout_constraintBottom_toBottomOf="@+id/myPhoto_imageView"
+            app:layout_constraintEnd_toEndOf="@+id/myPhoto_imageView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/myPhoto_imageView" />
+
+        <TextView
+            android:id="@+id/track_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="@string/track"
+            app:layout_constraintEnd_toEndOf="@+id/name_textView"
+            app:layout_constraintStart_toStartOf="@+id/name_textView"
+            app:layout_constraintTop_toBottomOf="@+id/name_textView" />
+
+        <TextView
+            android:id="@+id/country_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="@string/country"
+
+            app:layout_constraintEnd_toEndOf="@+id/track_textView"
+            app:layout_constraintStart_toStartOf="@+id/track_textView"
+            app:layout_constraintTop_toBottomOf="@+id/track_textView" />
+
+        <TextView
+            android:id="@+id/email_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="@string/email"
+            app:layout_constraintBottom_toBottomOf="@+id/track_textView"
+            app:layout_constraintEnd_toEndOf="@+id/country_textView"
+            app:layout_constraintStart_toStartOf="@+id/country_textView"
+            app:layout_constraintTop_toBottomOf="@+id/country_textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/phone_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="@string/phone"
+            app:layout_constraintEnd_toEndOf="@+id/email_textView"
+            app:layout_constraintStart_toStartOf="@+id/email_textView"
+            app:layout_constraintTop_toBottomOf="@+id/email_textView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

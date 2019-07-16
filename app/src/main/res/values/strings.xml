@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Alc</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_web_view">webViewActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="about_alc_button">About Alc</string>
+    <string name="my_name">Name: Epiphany Muriuki</string>
+    <string name="track">Track: Alc 4.0 Android</string>
+    <string name="country">County: Kenya</string>
+    <string name="email">Email: epiphanymuriuki7@gmail.com</string>
+    <string name="phone">Phone:  0729088984</string>
+    <string name="my_profile_button">My Profile</string>
+    <string name="welcome_text">Welcome to ALC 4.0 </string>
+</resources>
